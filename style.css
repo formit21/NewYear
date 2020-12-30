@@ -1,0 +1,162 @@
+body{
+
+    background-color:rgba(49, 28, 168, 0.527);
+
+}
+
+/* Анимация снегопада */
+
+#snow{
+
+    background-image: url("img/snow_1.png"), url("img/snow_2.png"), url("img/snow_3.png");
+    z-index: 1;
+
+
+
+    animation: snow 15s linear infinite;
+
+}
+
+@keyframes snow{
+    0%{
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+
+    75%{
+        background-position: 500px 750px, 150px 1500px, -175px 150px;
+    }
+
+    100%{
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+
+}
+
+
+
+/* Музыкальная игрушка */
+
+/* #tree{
+
+    position: relative;
+    left: calc(9% - 140px);
+    
+    background-image: url("img/Christmas_Tree_114.png");
+    background-size: contain;
+    width: 190px;
+    height: 211px;
+}
+#toy1{
+    position: relative;
+    width: 26px;
+    left: 46px;
+    top: 91px;
+    transform-origin: top;
+    animation: toyShake linear 3s 1s infinite;
+}
+#toy2{
+    position: relative;
+    width: 26px;
+    left: 46px;
+    top: 91px;
+    transform-origin: top;
+    animation: toyShake linear 3s infinite;
+}
+#toy2{
+    position: relative;
+    width: 26px;
+    left: 46px;
+    top: 91px;
+    transform-origin: top;
+    animation: toyShake linear 3s infinite;
+}
+ */
+
+
+
+
+@font-face {
+    font-family: 'Mountains of Christmas';
+    font-style: normal;
+    src: local("Mountains of Ch-ristmas"), local("MountainsofChristmas-Regular"), url(https://fonts.gstatic.com/s/mountainsofchristmas/v8/dVGBFPwd6G44IWDbQtPewylJhLDHyIrT3I5b5eGTHmw.woff2) format("woff2");
+}
+
+#graz{
+
+    position: absolute;
+    left: 21%;
+    top: 25%;
+    color: #b0ebeb;
+    font-family: 'Mountains of Christmas';
+    user-select: none;
+}
+
+#graz>h1{
+
+    font-size: 140pt;
+
+}
+#countdown{
+    position: absolute;
+    left: -7%;
+    top: 59%;
+    color: rgba(70, 252, 252, 0.753);
+    font-family: 'Squada One' , cursive;
+
+}
+#countdown>p{
+    font-size: 44pt;
+    position: relative;
+    left: 80%;
+
+}
+#countdown>span{
+    font-size: 44pt;
+    position: relative;
+    left: 93%;
+    top: -55px;
+
+}
+#p{
+    left: 40%;
+}
+
+/* Для смартфона */
+/* Поздравительная надпись */
+@font-face {
+    font-family: 'Mountains of Christmas';
+    font-style: normal;
+    src: local("Mountains of Christmas"), local("MountainsofChristmas-Regular"), url(https://fonts.gstatic.com/s/mountainsofchristmas/v8/dVGBFPwd6G44IWDbQtPewylJhLDHyIrT3I5b5eGTHmw.woff2) format("woff2");
+}
+#grazMobile{
+    position: absolute;
+    left: calc(33vw - 10vw);
+    top: 20vh;
+    color: #b0ebeb;
+    font-family: 'Mountains of Christmas';
+    user-select: none;
+}
+#grazMobile>h1{
+    font-size: 10vw;
+}
+/* Таймер отсчёта до Нового Года  */
+#countdownMobile{
+    font-family: 'Squada One';
+    position: absolute;
+    left: calc(33vw - 10vw);
+    top: 28vh;
+    color: #b0ebeb;
+}
+#countdownMobile>p{
+    font-size: 5vw;
+    position: relative;
+    left: 10%;
+}
+#countdownMobile>span{
+    font-size: 7vw;
+    position: relative;
+    left: 94%;
+    top: -56px;
+}
+
+
