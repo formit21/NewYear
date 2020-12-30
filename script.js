@@ -149,3 +149,8 @@ setInterval(function(){
         $(".hand-r").removeClass("hand-rSwing");
     }, 1500)
 }, 3500)
+// Открываем и закрываем открытку
+$(".envlope-wrapper").click(function (e) { 
+    $("#envelope").toggleClass("open");
+    $("#envelope").toggleClass("close");
+});
